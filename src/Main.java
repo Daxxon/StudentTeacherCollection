@@ -131,7 +131,13 @@ public class Main {
 //      System.out.println(firstGradeRoster.get(teacher));
 //    }
 
+//    using entrySet() for the extra cred
     Set mySet = firstGradeRoster.entrySet();
     System.out.println("Set values: " + mySet);
+
+//    using entrySet() another way just in case first wasn't good enough
+    for (Map.Entry<Teacher, java.util.Set> entry : firstGradeRoster.entrySet()) {
+      System.out.println("Key : " + entry.getKey() + "\n" + "Value : " + entry.getValue());
+    }
   }
 }
