@@ -119,7 +119,7 @@ public class Main {
     firstGradeRoster.put(rita, secondGroup);
     firstGradeRoster.put(stephen, thirdGroup);
 
-    //lines 123 and 124 are only in this program because the assignment specifically asked for them.
+    //lines 124 and 125 are only in this program because the assignment specifically asked for them.
     //lines 127-131 present the same data in an way that is easier to read.
     System.out.println(firstGradeRoster.keySet());
     System.out.println(firstGradeRoster.values());
