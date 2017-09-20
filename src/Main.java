@@ -119,16 +119,19 @@ public class Main {
     firstGradeRoster.put(rita, secondGroup);
     firstGradeRoster.put(stephen, thirdGroup);
 
-    //lines 124 and 125 are only in this program because the assignment specifically asked for them.
-    //lines 127-131 present the same data in an way that is easier to read.
-    System.out.println(firstGradeRoster.keySet());
-    System.out.println(firstGradeRoster.values());
+//    lines 124 and 125 are only in this program because the assignment specifically asked for them.
+//    lines 127-131 present the same data in an way that is easier to read.
+//    System.out.println(firstGradeRoster.keySet());
+//    System.out.println(firstGradeRoster.values());
+//
+//    for (Teacher teacher : firstGradeRoster.keySet()) {
+//      System.out.print("Teacher: ");
+//      System.out.println(teacher.toString());
+//      System.out.print(teacher.toString() + "'s students: ");
+//      System.out.println(firstGradeRoster.get(teacher));
+//    }
 
-    for (Teacher teacher : firstGradeRoster.keySet()) {
-      System.out.print("Teacher: ");
-      System.out.println(teacher.toString());
-      System.out.print(teacher.toString() + "'s students: ");
-      System.out.println(firstGradeRoster.get(teacher));
-    }
+    Set mySet = firstGradeRoster.entrySet();
+    System.out.println("Set values: " + mySet);
   }
 }
